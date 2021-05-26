@@ -1,0 +1,7 @@
+<app-todo-item 
+    *ngFor="let item of todoList" 
+    [item]="item"
+    (toggle)="toggle(item)"
+    >
+
+</app-todo-item>

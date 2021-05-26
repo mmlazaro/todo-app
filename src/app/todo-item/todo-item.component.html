@@ -1,0 +1,9 @@
+<div *ngIf="item" [ngClass]="item.status ? 'done' : ''">
+    <p>
+        {{item.name}} 
+    </p>
+    <p>
+        {{item.description}}
+    </p>
+    <input type="checkbox" [value]="item.status" (change)="toggleItem()">
+</div>
